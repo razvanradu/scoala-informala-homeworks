@@ -1,0 +1,25 @@
+package vehicles.parking;
+
+import org.junit.Before;
+
+public class ParkingTicketTest {
+
+	private class Camel {
+
+		private String name;
+
+		public Camel(String name){
+			this.name=name;
+		}
+
+		public void start() {
+
+		}
+	}
+
+	@Before
+	public void checkValidTicket() {
+
+	}
+
+}

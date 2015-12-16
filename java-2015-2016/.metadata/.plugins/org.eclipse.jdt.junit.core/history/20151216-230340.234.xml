@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ParkingTicketTest" project="homework-8" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="vehicles.parking.ParkingTicketTest" time="0.0">
+    <testcase name="checkValidTicket" classname="vehicles.parking.ParkingTicketTest" time="0.0"/>
+  </testsuite>
+</testrun>

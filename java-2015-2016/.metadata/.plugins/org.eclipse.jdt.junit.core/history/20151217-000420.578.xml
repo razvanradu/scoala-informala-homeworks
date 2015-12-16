@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ValletParkingTest" project="homework-8" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="vehicles.parking.ValletParkingTest" time="0.016">
+    <testcase name="checkValidConstructorCar" classname="vehicles.parking.ValletParkingTest" time="0.0"/>
+    <testcase name="checkParkVehicleRunning" classname="vehicles.parking.ValletParkingTest" time="0.016"/>
+    <testcase name="checkRetrieveVehicleRunning" classname="vehicles.parking.ValletParkingTest" time="0.0"/>
+    <testcase name="checkParkVehicleNotRunning" classname="vehicles.parking.ValletParkingTest" time="0.0"/>
+    <testcase name="checkValidConstructorTank" classname="vehicles.parking.ValletParkingTest" time="0.0"/>
+    <testcase name="checkRetrieveVehicleException" classname="vehicles.parking.ValletParkingTest" time="0.0"/>
+  </testsuite>
+</testrun>

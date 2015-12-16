@@ -1,0 +1,43 @@
+/**
+ * 
+ */
+package vehicles.parking;
+
+import automobiles.*;
+
+/**
+ * 
+ * @author Razvan Radu
+ *
+ */
+public class Helicopter implements Vehicle{
+
+	private double totalFlightHours;
+	private double tripFlightHours;
+	private boolean isFlying;
+	private String name;
+	
+	public Helicopter(String name){
+		this.name = name;
+		isFlying = false;
+	}
+	
+	
+	@Override
+	public void drive(double hours) {
+				
+	}
+
+	@Override
+	public void start() {
+		
+		
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

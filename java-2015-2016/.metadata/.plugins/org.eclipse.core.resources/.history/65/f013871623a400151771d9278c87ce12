@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package vehicles.parking;
+
+import automobiles.*;
+
+/**
+ * @author rlu
+ *
+ */
+public class Tank implements Vehicle{
+	
+	
+}

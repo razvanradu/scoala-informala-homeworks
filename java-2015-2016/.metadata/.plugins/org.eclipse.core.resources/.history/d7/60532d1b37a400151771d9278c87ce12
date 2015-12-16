@@ -1,0 +1,34 @@
+package vehicles.parking;
+
+import org.junit.Before;
+
+public class ParkingTicketTest {
+
+	private class Camel {
+
+		private String name;
+		private double distanceRan;
+
+		public Camel(String name){
+			this.name=name;
+		}
+
+		public void start() {
+			this.distanceRan = 0;
+		}
+		
+		public void stop() {
+			
+		}
+		
+		public void drive(double kilometers){
+			this.distanceRan += kilometers;
+		}
+	}
+
+	@Before
+	public void checkValidTicket() {
+
+	}
+
+}

@@ -1,0 +1,52 @@
+/**
+ * 
+ */
+package vehicles.parking;
+
+import automobiles.*;
+
+/**
+ * @author rlu
+ *
+ */
+public class ParkingTicket {
+
+	private String ticketID;
+	private double kilometers;
+	
+	public ParkingTicket(Vehicle car){	
+		this.ticketID = new String(car.getClass().getName() + car.getClass().getName().length());
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((ticketID == null) ? 0 : ticketID.hashCode());
+		return result;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (!(obj instanceof ParkingTicket))
+			return false;
+		ParkingTicket other = (ParkingTicket) obj;
+		if (ticketID == null) {
+			if (other.ticketID != null)
+				return false;
+		} else if (!ticketID.equals(other.ticketID))
+			return false;
+		return true;
+	}
+	
+}

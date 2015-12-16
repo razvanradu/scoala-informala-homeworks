@@ -1,0 +1,77 @@
+/**
+ * 
+ */
+package vehicles.parking;
+
+import automobiles.*;
+
+/**
+ * @author rlu
+ *
+ */
+public class Tank implements Vehicle{
+
+	private double totalDistance;
+	private double tripDistance;
+	private boolean isRunning;
+	private String name;
+	
+	public Tank(String name){
+		this.name = name;
+		isRunning = false;
+	}
+	
+	/**
+	 * @return the totalDistance
+	 */
+	public double getTotalDistance() {
+		return totalDistance;
+	}
+	
+	/**
+	 * @return the name
+	 */
+	public String getTankName() {
+		return name;
+	}
+
+	/**
+	 * @return the tripFlightHours
+	 */
+	public double getTripDistance() {
+		return tripDistance;
+	}
+	
+	
+	/**
+	 * 
+	 */
+	@Override
+	public void drive(double distance) {
+		if (!isRunning) {
+			throw new IllegalArgumentException("Tank is stopped, it cannot be driven");
+		} else {
+			this.tripDistance += distance;
+		}
+	}
+
+	/**
+	 * 
+	 */
+	@Override
+	public void start() {
+		this.isRunning = true;
+		this.tripDistance = 0;
+	}
+
+	/**
+	 * 
+	 */
+	@Override
+	public void stop() {
+		this.isRunning = false;
+		this.totalDistance += this.tripDistance;
+	}
+	
+	
+}

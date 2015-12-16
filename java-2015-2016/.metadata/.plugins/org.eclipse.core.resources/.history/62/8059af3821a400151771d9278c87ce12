@@ -1,0 +1,61 @@
+/**
+ * 
+ */
+package vehicles.parking;
+
+import automobiles.*;
+
+/**
+ * 
+ * @author Razvan Radu
+ *
+ */
+public class Helicopter implements Vehicle{
+
+	private double totalFlightHours;
+	private double tripFlightHours;
+	private boolean isFlying;
+	private String name;
+	
+	public Helicopter(String name){
+		this.name = name;
+		isFlying = false;
+	}
+	
+	/**
+	 * @return the totalFlightHours
+	 */
+	public double getTotalFlightHours() {
+		return totalFlightHours;
+	}
+
+	/**
+	 * @return the tripFlightHours
+	 */
+	public double getTripFlightHours() {
+		return tripFlightHours;
+	}
+
+	@Override
+	public void drive(double hours) {
+		if (!isFlying) {
+			throw new IllegalArgumentException("Helicopter not flying, it should be started before driving");
+		}
+		else {
+			
+		}
+	}
+
+	@Override
+	public void start() {
+		
+		
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

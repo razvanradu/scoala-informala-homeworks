@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package vehicles.parking;
+
+/**
+ * @author rlu
+ *
+ */
+public class ValletParkingTicket {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

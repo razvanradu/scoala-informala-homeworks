@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package vehicles.parking;
+
+import automobiles.*;
+
+/**
+ * @author rlu
+ *
+ */
+public class ParkingTicket {
+
+	private String ticketID;
+	
+	public ParkingTicket(Car car){	
+		
+	}
+}

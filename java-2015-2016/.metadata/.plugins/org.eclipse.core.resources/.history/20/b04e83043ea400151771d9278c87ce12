@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package vehicles.parking;
+
+import org.junit.Before;
+
+/**
+ * @author Razvan Radu
+ *
+ */
+public class ValletParkingTest {
+
+	
+	@Before
+	public void setup(){
+		
+	}
+}

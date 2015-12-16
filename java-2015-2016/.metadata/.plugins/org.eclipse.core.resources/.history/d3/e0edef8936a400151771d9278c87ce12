@@ -1,0 +1,8 @@
+package vehicles.parking;
+import org.junit.Before;
+
+public class ParkingTicketTest {
+
+	@Before
+	
+}

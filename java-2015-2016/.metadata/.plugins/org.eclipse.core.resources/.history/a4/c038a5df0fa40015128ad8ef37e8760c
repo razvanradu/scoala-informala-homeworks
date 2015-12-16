@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package vehicles.parking;
+
+import automobiles.*;
+
+/**
+ * @author rlu
+ *
+ */
+public class ValletParkingTicket {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		ValletParking<Car> carPark = new ValletParking<Car>();
+		Car car = new Astra(20, "W0L0bgabi");
+
+	}
+
+}

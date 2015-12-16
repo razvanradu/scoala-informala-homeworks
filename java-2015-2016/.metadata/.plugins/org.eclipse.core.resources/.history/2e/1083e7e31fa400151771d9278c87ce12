@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package vehicles.parking;
+
+/**
+ * @author rlu
+ *
+ */
+public class SomethingNotVehicle {
+	
+	public SomethingNotVehicle(){
+		
+	}
+}

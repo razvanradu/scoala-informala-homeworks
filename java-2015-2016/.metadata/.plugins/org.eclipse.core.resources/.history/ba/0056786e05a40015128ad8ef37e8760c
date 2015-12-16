@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package vehicles.parking;
+
+import java.util.Set;
+import automobiles.*;
+
+/**
+ * @author rlu
+ *
+ */
+public class ValletParking <T extends Vehicle>{
+
+	private Set<T> parking;
+	
+	/**
+	 * 
+	 * @param v
+	 * @return
+	 */
+	public <E extends Vehicle> ParkingTicket parkVehicle(Vehicle v){
+		this.parking.add(v);
+		return new ParkingTicket(v);
+	}
+	
+	public <T extends Vehicle> T retrieveVehicle(ParkingTicket ticket){
+		
+		return null;
+	}
+	
+}

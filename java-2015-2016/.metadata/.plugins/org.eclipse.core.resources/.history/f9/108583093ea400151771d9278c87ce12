@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package vehicles.parking;
+
+import org.junit.Before;
+
+import automobiles.Car;
+
+/**
+ * @author Razvan Radu
+ *
+ */
+public class ValletParkingTest {
+
+	private Camel camel;
+	private Tank tank;
+	private Car car1; 
+	
+	@Before
+	public void setup(){
+		
+	}
+}

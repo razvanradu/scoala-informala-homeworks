@@ -1,0 +1,65 @@
+/**
+ * 
+ */
+package vehicles.parking;
+
+import java.util.LinkedList;
+import java.util.List;
+import automobiles.*;
+
+/**
+ * @author rlu
+ *
+ */
+public class ValletParking <T extends Vehicle>{
+
+	private List<T> parking = new LinkedList<>();
+
+	
+	/**
+	 * 
+	 * @param v
+	 * @return
+	 */
+	public <E extends Vehicle> ParkingTicket parkVehicle(E v){
+		double kilometers = 8*Math.random();
+		
+		if (this.parking.contains((T)v)){
+			throw new IllegalArgumentException("Cannot re-park this vehicle");
+		} else {
+			this.parking.add((T)v);
+			v.start();
+			v.drive(kilometers);
+			v.stop();
+			ParkingTicket ticket = new ParkingTicket(v);
+			ticket.setDistance(kilometers);
+			return ticket;
+		}
+	}
+	
+	/**
+	 * Method which allows the retrieval of an element indicated by its parking ticket.
+	 * @param ticket {@link ParkingTicket ParkingTicket}
+	 * @return the element (Class which implements the {@link Vehicle Vehicle} interface) which is stored with the corresponding ticket.
+	 * @throws NullPointerException in case the ticket is invalid (does not correspond to a parked {@link Vehicle Vehicle})
+	 */
+	public <E extends Vehicle> E retrieveVehicle(ParkingTicket ticket){
+		E found=null;
+		
+		for(T o : this.parking){
+			if (new ParkingTicket(o).equals(ticket)) {
+				found = (E)o;
+			}
+		}
+		if(null != found) {
+			found.start();
+			found.drive(ticket.getDistance());
+			found.stop();
+			return found;
+		}
+		else {
+			throw new NullPointerException("Invalid ticket");
+		}
+	}
+	
+}

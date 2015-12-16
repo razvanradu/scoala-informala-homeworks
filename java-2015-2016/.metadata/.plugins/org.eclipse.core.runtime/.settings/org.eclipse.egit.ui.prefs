@@ -1,0 +1,4 @@
+BranchProjectTracker__E\:\\scoala_informala_homework\\scoala-informala-homeworks\\.git_bc6ce9545408f010d0544f830a8126913dbbc2dc=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="bc6ce9545408f010d0544f830a8126913dbbc2dc">\r\n<project>\\java-2015-2016\\homework-8</project>\r\n</projects>
+BranchProjectTracker__E\:\\scoala_informala_homework\\scoala-informala-homeworks\\.git_master=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="master">\r\n<project>\\java-2015-2016\\homework-8</project>\r\n</projects>
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>First issue, created all necessary classes.&\#x0A;&\#x0A;Unit tests and documentation included. Tested exceptions to be thrown in&\#x0A;case of invalid input data.</message>\r\n<message>first commit</message>\r\n</messages>
+eclipse.preferences.version=1

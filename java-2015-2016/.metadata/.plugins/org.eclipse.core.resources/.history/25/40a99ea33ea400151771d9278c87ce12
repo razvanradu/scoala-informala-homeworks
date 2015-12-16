@@ -1,0 +1,41 @@
+/**
+ * 
+ */
+package vehicles.parking;
+
+import org.junit.Before;
+import org.junit.Test;
+import automobiles.*;
+
+/**
+ * @author Razvan Radu
+ *
+ */
+public class ValletParkingTest {
+
+	private Camel camel;
+	private Tank tank;
+	private Car car1; 
+	
+	@Before
+	public void setup(){
+		camel = new Camel("Johnny");
+		tank = new Tank("M4A1 Abrams");
+		car1 = new Insignia(40 , "W09galgue");
+	}
+	
+	@Test
+	public void checkValidConstructorCar(){
+		ValletParking<Car> carPark = new ValletParking<>();
+	}
+	
+	@Test
+	public void checkValidConstructorTank(){
+		ValletParking<Tank> carPark = new ValletParking<>();
+	}
+	
+	@Test
+	public void checkInvalidConstructorCamel(){
+		ValletParking<Camel> carPark = new ValletParking<>();
+	}
+}

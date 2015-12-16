@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package vehicles.parking;
+
+import automobiles.*;
+
+/**
+ * @author rlu
+ *
+ */
+public class ValletParkingTicket {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		ValletParking<Car> carPark = new ValletParking<Car>();
+		Car car1 = new Astra(20, "W0L0bgabi");
+		Car car2 = new Logan(30 , "geiahgegy");
+		Car car3 = new Logan(20 , "gobsgajlg");
+		float availableFuel1 = car1.getAvailableFuel();
+		ParkingTicket ticket1 = carPark.parkVehicle(car1);
+
+	}
+
+}

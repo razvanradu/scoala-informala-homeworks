@@ -1,0 +1,46 @@
+package vehicles.parking;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class ParkingTicketTest {
+
+	private class Camel {
+
+		private String name;
+		private double distanceRan;
+		private boolean camelRunning;
+
+		public Camel(String name){
+			this.name=name;
+			this.camelRunning = false;
+		}
+
+		public void start() {
+			this.distanceRan = 0;
+			this.camelRunning = true;
+		}
+		
+		public void stop() {
+			this.camelRunning = false;
+		}
+		
+		public void drive(double kilometers){
+			this.distanceRan += kilometers;
+		}
+	}
+	
+	private Camel camel = new Camel("Johnny");
+	private Tank tank = new Tank("M4A1 Abrams");
+
+	@Before
+	public void setup(){
+		
+	}
+	
+	@Test
+	public void checkValidTicket() {
+		
+	}
+
+}
