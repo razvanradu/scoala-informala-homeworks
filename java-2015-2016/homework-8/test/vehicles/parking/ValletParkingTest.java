@@ -9,6 +9,7 @@ import automobiles.*;
 import junit.framework.Assert;
 
 /**
+ * Implemented a modification so any {@link Car Car type} automatically calls {@link Car#shiftGear(int) shiftGear(1)} within the {@link Car#start() start() method}
  * @author Razvan Radu
  *
  */
@@ -38,14 +39,14 @@ public class ValletParkingTest {
 	@Test
 	public void checkParkVehicleRunning(){
 		ValletParking<Car> carPark = new ValletParking<>();
-		car1.shiftGear(1);
+		
 		ParkingTicket ticket = carPark.parkVehicle(car1);
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
 	public void checkParkVehicleNotRunning(){
 		ValletParking<Car> carPark = new ValletParking<>();
-		car1.shiftGear(1);
+		
 		ParkingTicket ticket = carPark.parkVehicle(car1);
 		ParkingTicket ticket2 = carPark.parkVehicle(car1);
 	}
@@ -53,7 +54,7 @@ public class ValletParkingTest {
 	@Test
 	public void checkRetrieveVehicleRunning(){
 		ValletParking<Car> carPark = new ValletParking<>();
-		car1.shiftGear(1);
+		
 		ParkingTicket ticket = carPark.parkVehicle(car1);
 		Car car2 = carPark.retrieveVehicle(ticket);
 		Assert.assertTrue(car2.equals(car1));

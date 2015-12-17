@@ -18,11 +18,11 @@ public class ValletParkingTicket {
 		
 		ValletParking<Car> carPark = new ValletParking<Car>();
 		Car car1 = new Astra(20, "W0L0bgabi");
-		car1.shiftGear(1);
+		
 		Car car2 = new Logan(30 , "geiahgegy");
-		car2.shiftGear(1);
+		
 		Car car3 = new Logan(20 , "gg75ge64gy");
-		car3.shiftGear(1);
+		
 		float availableFuel1 = car2.getAvailableFuel();
 		System.out.println("Car 2 initial fuel:" + availableFuel1);
 		ParkingTicket ticket1 = carPark.parkVehicle(car1);
