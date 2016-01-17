@@ -31,6 +31,7 @@ public class ParkingTicketTest {
 	@Test(expected = ClassCastException.class)
 	public void checkInvalidTicket() {
 		ParkingTicket ticket = new ParkingTicket((Vehicle)camel);
+		// TODO CODE REVIEW: The class cast exceptio  is thrown when you try to cast to Vehicle, NOT in teh costructor.
 	}
 	
 }

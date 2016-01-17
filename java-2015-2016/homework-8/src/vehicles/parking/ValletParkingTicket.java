@@ -9,6 +9,7 @@ import automobiles.*;
  * @author rlu
  *
  */
+// TODO CODE REVIEW: This is never used.
 public class ValletParkingTicket {
 
 	/**

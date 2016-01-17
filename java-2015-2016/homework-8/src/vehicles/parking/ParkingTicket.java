@@ -38,6 +38,7 @@ public class ParkingTicket {
 		if (car instanceof Vehicle){
 			this.ticket = car;
 		} else {
+			// TODO CODE REVIEW: Can the object be anything other than Vehicle? Can you show an example when ClassCastException is thrown.
 			throw new ClassCastException("Invalid type of object, Vehicle or extended from Vehicle are accepted");
 		}
 		

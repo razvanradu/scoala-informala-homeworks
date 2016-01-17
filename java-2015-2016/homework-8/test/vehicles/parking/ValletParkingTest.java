@@ -29,11 +29,13 @@ public class ValletParkingTest {
 	@Test
 	public void checkValidConstructorCar(){
 		ValletParking<Car> carPark = new ValletParking<>();
+		// TODO CODE REVIEW: What are you testing? What are the asserts?
 	}
 	
 	@Test
 	public void checkValidConstructorTank(){
 		ValletParking<Tank> carPark = new ValletParking<>();
+		// TODO CODE REVIEW: What are you testing? What are the asserts?
 	}
 	
 	@Test
@@ -41,6 +43,7 @@ public class ValletParkingTest {
 		ValletParking<Car> carPark = new ValletParking<>();
 		
 		ParkingTicket ticket = carPark.parkVehicle(car1);
+		// TODO CODE REVIEW: What are you testing? What are the asserts?
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
@@ -66,4 +69,5 @@ public class ValletParkingTest {
 		ParkingTicket ticket = new ParkingTicket(car1);
 		Car car2 = carPark.retrieveVehicle(ticket);
 	}
+	// TODO CODE REVIEW: Where are the test cases described in the homework? assert amountOfFuelAfterParking < amountOfFuelBeforeParking;
 }

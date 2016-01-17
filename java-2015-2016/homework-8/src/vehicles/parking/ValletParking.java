@@ -31,6 +31,7 @@ public class ValletParking <T extends Vehicle>{
 	 * @throws IllegalArgumentException if the element already exists in the database
 	 * (has been parked prior to this attempt)
 	 */
+	// TODO CODE REVIEW: Since the class is already generic on Vehicles, you could have used just T in the method without having to redescribe E
 	public <E extends Vehicle> ParkingTicket parkVehicle(E v){
 		double kilometers = 8*Math.random();
 		
